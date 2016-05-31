@@ -3,54 +3,28 @@
 	<title>D3 Test</title>
 	<link rel="stylesheet" type="text/css" href="css/app.css/main.css">
 
-	<script type="text/javascript" src="js/d3.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	
 </head>
 
 <body>
-	<h1>Playing with D3</h1>
+	<div class="container">
+		<div class="section" id="first">
+			<h1>Playing with D3</h1>
+			<button id="dataButton">Randomize the Data</button>
+		</div>
 
-	<script type="text/javascript">
-		// D3 Code goes here
-		function makeCounter(){
-			var count=0;
-			function counter() {
-				count = count +1;
-				return count;
-			}
-			return counter;
-		}
-		var doCount=makeCounter();
-		var dataset = [ 25, 7, 5, 26, 11, 8, 25, 14, 23, 19,
-                14, 11, 22, 29, 11, 13, 12, 17, 18, 10,
-                24, 18, 25, 9, 3 ];
-		d3.select("body").selectAll("p")
-    .data(dataset)
-    .enter()
-    .append("p")
-    .text(function(d) {
-    	return doCount() + ". The data value is " + d;
-    })
-    .style("color", function(d) {
-    if (d > 15) {   //Threshold of 15
-        return "red";
-    } else {
-        return "black";
-    }
-		});
+		<div class="section" id="second">
+			<h2>Data Values</h2>
+		</div>
 
-    d3.select("body").selectAll("div")
-    .data(dataset)
-    .enter()
-    .append("div")
-    .attr("class", "bar")
-    .style("height", function(d) {
-    	return d*5 + "px";
-		});
+		<div class="section" id="third">
+			<h2>Bar Graphs</h2>
+		</div>
+	</div>
 
-
-	</script>
-	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/d3.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>

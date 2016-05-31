@@ -1,13 +1,40 @@
-$blue: rgb(100, 120, 200);
+$blue: teal;
 
+body{
+	width: 100%;
+}
+
+.container{
+	width: 1140px;
+	margin: 20px auto;
+	.section{
+		padding-left: 10px;
+		padding-right: 10px;
+		border: 1px solid $blue;
+		height: 400px;
+		margin-right: 2px;
+	}
+	#first{
+		width: 160px;
+	}
+	#second{
+		width: 300px;
+	}
+	#third{
+		width: 600px;
+	}
+}
+.section{
+	float: left;
+}
 h1{
 	color: $blue;
 }
 
-div.bar {
+#third div.bar {
     display: inline-block;
     width: 20px;
-    height: 75px;   /* We'll override this later */
+    height: 75px;  
     background-color: teal;
     margin-right: 2px;
 }

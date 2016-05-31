@@ -1,11 +1,32 @@
-h1 {
-  color: #6478c8; }
+body {
+  width: 100%; }
 
-div.bar {
+.container {
+  width: 1140px;
+  margin: 20px auto; }
+  .container .section {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid teal;
+    height: 400px;
+    margin-right: 2px; }
+  .container #first {
+    width: 160px; }
+  .container #second {
+    width: 300px; }
+  .container #third {
+    width: 600px; }
+
+.section {
+  float: left; }
+
+h1 {
+  color: teal; }
+
+#third div.bar {
   display: inline-block;
   width: 20px;
   height: 75px;
-  /* We'll override this later */
   background-color: teal;
   margin-right: 2px; }
 
