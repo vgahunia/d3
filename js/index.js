@@ -56,15 +56,14 @@ $('#dataButton').click(function() {
 //SECOND PART
 
 function makeData2() {
-
     var dataset2 = [];
     for (var i = 0; i < 25; i++) {    
-        var newNumber = Math.round(Math.random() * 21) +4; 
+        var newNumber = Math.round(Math.random() * 40) +4; 
         dataset2.push(newNumber);            
     }
     //Width and height
     var w = 500;
-    var h = 100;
+    var h = 180;
     var barPadding = 1;
     //Create SVG element
     var svg = d3.select("#third2 div")
@@ -83,7 +82,7 @@ function makeData2() {
             return h - d*4; 
         })
        .attr("fill", function(d) {
-            return "rgb(0, 0, " + (d * 7) + ")";
+            return "rgb(0, 0, " + (d * 5) + ")";
         })
        .attr("width", w / dataset2  .length - barPadding)
        .attr("height", function(d) {
