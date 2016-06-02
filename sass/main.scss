@@ -14,13 +14,13 @@ body{
 		height: 400px;
 		margin-right: 2px;
 	}
-	#first{
+	#first, #first2{
 		width: 160px;
 	}
-	#second{
+	#second, #second2{
 		width: 300px;
 	}
-	#third{
+	#third, #third2{
 		width: 600px;
 	}
 }
@@ -43,4 +43,13 @@ p{
 	margin: 0;
 	padding: 0;
 	font-size: .7em;
+}
+#first2{
+	h1{
+		color: rgb(0,0,140);
+	}
+}
+#third2 div{
+	position: relative;
+	top: 80px;
 }
