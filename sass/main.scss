@@ -1,7 +1,16 @@
-$blue: teal;
+$blue: rgb(0,0,140);
 
 body{
 	width: 100%;
+	background-color: rgb(250, 250, 255);
+}
+h1{
+	color: $blue;
+}
+p{
+	margin: 0;
+	padding: 0;
+	font-size: .8em;
 }
 
 .container{
@@ -11,8 +20,10 @@ body{
 		padding-left: 10px;
 		padding-right: 10px;
 		border: 1px solid $blue;
-		height: 400px;
+		height: 300px;
 		margin-right: 2px;
+		background-color: white;
+		float:left;
 	}
 	#first, #first2{
 		width: 160px;
@@ -23,34 +34,46 @@ body{
 	#third, #third2{
 		width: 600px;
 	}
+	#third2{
+		// background-color: rgb(130,130,255);
+	}
 }
-.section{
-	float: left;
-}
-h1{
-	color: $blue;
-}
-
-#third div.bar {
-    display: inline-block;
-    width: 20px;
-    height: 75px;  
-    background-color: teal;
-    margin-right: 2px;
-}
-
-p{
-	margin: 0;
-	padding: 0;
-	font-size: .7em;
-}
-#first2{
+#first{
 	h1{
 		color: rgb(0,0,140);
 	}
 }
-#third2 div{
+#third div{
 	position: relative;
-	top: 120px;
+	top: 70px;
 	left:30px;
 }
+.data{
+	float:left;
+}
+#p1{
+	padding-right: 10px;
+	padding-left: 5px;
+	border-right: 1px solid rgb(0,0,140);
+}
+#p2{
+	padding-left: 10px;
+}
+
+// Scatterplot
+#p1Scatter{
+	padding-left: 40px;
+	padding-top: 3px;
+	margin: 0
+}
+#second2{
+	h2{
+		margin-bottom: 0;
+	}
+}
+#third2 div{
+	position: relative;
+	top:0;
+	left:-10;
+}
+
